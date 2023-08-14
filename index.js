@@ -27,29 +27,16 @@ const customer = {
   console.log(customer);
 
 
-  const customer = { 
-  toppings: "chocolate sprinkles", "wafer straws","gummy bears";
-  futureFlavors: "mango",
-  todaysPurchaseCost: 5.32,
+ // corrected: user dot notation needed 
 
-  };
-
-  console.log(customer);
-
-
-  const customer = {
-    firstName: "jake",
-    lastName: "smith",
-    email: "jaekSmih!aol.com",
-    phone:	undefined,
-    zipCode:	"631",
-    favoriteFlavors: 32,
-    cupSize:   "medium",
-    favoriteStore:	"Target",
-    firstVisit:	    false,
-    toppings: "chocolate sprinkles", "wafer straws","gummy bears";
-    futureFlavors: "mango",
-    todaysPurchaseCost: 5.32,
-  };
-
-  console.table (customer);
+  customer.toppings = ["chocolate sprinkles", "wafer straws", "gummy bears"];
+  customer.futureFlavors = "mango";
+  customer.todaysPurchaseCost = 5.32;
+  
+// to print just the keys object dot keys
+  
+  const keys = Object.keys(customer);
+  console.log("KEYS: ", keys)
+  
+  console.log(customer)
+  console.table(customer)
